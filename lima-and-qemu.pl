@@ -127,7 +127,7 @@ if ($arch eq "aarch64") {
 print "$_ $deps{$_}\n" for sort keys %deps;
 print "\n";
 
-my $dist = "qemu-$arch";
+my $dist = "qemu-darwin-$arch";
 system("rm -rf /tmp/$dist");
 
 # Copy all files to /tmp tree and make all dylib references relative to the
